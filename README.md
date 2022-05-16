@@ -45,7 +45,26 @@ Ecrire un algorithme qui permet à l'utilisateur de saisir un chiffre.
  - Si ce chiffre est plus grand que 10 afficher "Ce chiffre est plus grand que 10".
 
 Pré-requis : 
+### comment réussir à écouter la console pour recevoir ce que tape un utilisateur
 
+Pour écouter la console il y a des méthodes qui existe dans java. 
+
+il faut tout d'abord rajouter une variable à la classe Main. Comme ceci:
+
+````java
+    private static  BufferedReader reader = new BufferedReader(
+            new InputStreamReader(System.in));
+````
+
+et dans notre code nous avons plus qu'à rajouter :
+
+```java 
+     String input = reader.readLine();
+```
+
+et input contiendra la valeur tapé par l'utilisateur.
+
+### condition
 Il existe des conditions en java comme dans tout langage de programmation. Pour faire une condition il suffit de faire comme ceci : 
 
 ```java
